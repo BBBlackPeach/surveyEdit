@@ -1,0 +1,33 @@
+/* 全局生效：页面统一样式 */
+
+.width-100-group {
+    width: 100%;
+}
+
+.height-100-group {
+    height: 100%;
+}
+
+// 水平垂直居中
+.bothCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// 水平居中
+.justifyCenter {
+    display: flex;
+    justify-content: center;
+}
+
+// 垂直居中
+.alignCenter {
+    display: flex;
+    align-items: center;
+}
+
+// 鼠标指针默认
+.cursor-default-group {
+    cursor: default;
+}
