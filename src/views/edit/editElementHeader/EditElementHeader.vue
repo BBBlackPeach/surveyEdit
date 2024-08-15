@@ -19,7 +19,7 @@
             <el-aside class="right-side alignCenter" width="18rem">
                 <el-button plain icon="Checked" @click="saveSurveyElement">保存</el-button>
                 <el-button plain icon="View" @click="goToPreview">预览</el-button>
-                <el-button plain @click="goToPreview"><img src="../../../assets/github.svg" alt="图片加载失败" />仓库</el-button>
+                <el-button plain @click="goToGithub"><img src="../../../assets/github.svg" alt="图片加载失败" />仓库</el-button>
             </el-aside>
         </el-container>
     </el-card>
@@ -33,6 +33,13 @@ const editStore = useEditStore();
 
 const router = useRouter()
 
+const saveSurveyElement = () => {
+    ElMessage({
+        message: '点击了保存按钮',
+        type: 'success',
+    })
+}
+
 const goToPreview = () => {
     if (editStore.evaluationForm.length == 0) {
         ElMessage({
@@ -45,11 +52,12 @@ const goToPreview = () => {
     router.push('/survey/preview')
 }
 
-const saveSurveyElement = () => {
-    ElMessage({
-        message: '点击了保存按钮',
-        type: 'success',
-    })
+const goToGithub = () => {
+    const a = document.createElement('a'); // 创建一个 a 标签
+    a.href = "https://github.com/BBBlackPeach/surveyEdit";
+    a.target="_blank";
+    a.rel="noopener noreferrer";
+    a.click(); // 模拟点击
 }
 
 </script>
