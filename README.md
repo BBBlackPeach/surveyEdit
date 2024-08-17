@@ -6,7 +6,7 @@ Vue 3 + TypeScript + Vite + ElementPlus + Vuedraggable
 ### 演示地址
 [演示地址](http://zwytjl.top/surveyEdit/)
 
-### 页面
+### 页面如下
 
 ![image](https://github.com/user-attachments/assets/0a187566-0bec-4a36-9dc9-658cee409960)
 
