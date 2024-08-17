@@ -85,6 +85,7 @@ import BPElement from '@/components/edit/elementList';
 import Draggable from 'vuedraggable';
 import { v4 as uuidv4 } from 'uuid';
 import { ElMessageBox } from 'element-plus';
+import { deepCopy } from '@/utils/deepCopy';
 import useEditStore from '@/store/edit';
 
 const editStore = useEditStore();
@@ -153,7 +154,7 @@ const handleElementChange = (value: any) => {
 
 const handleCopy = (index: number) => {
     console.log("复制触发");
-    let temp = editStore.evaluationForm[index];
+    let temp = deepCopy(editStore.evaluationForm[index]);
     temp.elementId = uuidv4();
     editStore.evaluationForm.splice(index + 1, 0, temp);
 }

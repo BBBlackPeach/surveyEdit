@@ -6,7 +6,7 @@
             </template>
         </el-page-header>
         <el-scrollbar class="scrollbar-container justifyCenter">
-            <el-form ref="previewFormRef" class="element-form" :model="FormData" scroll-to-error hide-required-asterisk
+            <el-form ref="previewFormRef" class="element-form" :model="FormData" scroll-to-error hide-required-asterisk inline-message
                 label-position="top">
                 <div class="form-title bothCenter">
                     问卷大标题

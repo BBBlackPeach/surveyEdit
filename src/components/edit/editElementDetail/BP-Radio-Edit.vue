@@ -8,21 +8,11 @@
         <el-descriptions title="" :column="1" border>
             <el-descriptions-item v-for="(item, index) in editStore.currentElement.property.children">
                 <template #label>
-                    <!-- <el-popover placement="top" trigger="hover"
-                                        content="this is content, this is content, this is content">
-                                        <template #reference> -->
                     <el-input v-model="item.value" class="un-border-input"></el-input>
-                    <!-- </template>
-        <template #default>
-                                            <el-row>不可选</el-row>
-                                            <el-row>删除</el-row>
-                                        </template>
-        </el-popover> -->
                 </template>
-                <el-dropdown trigger="contextmenu">
+                <el-dropdown trigger="hover">
                     <el-input v-model="item.label" class="un-border-input"></el-input>
                     <template #dropdown>
-                        <!-- <div>{{ item.value }}</div> -->
                         <el-dropdown-menu>
                             <el-dropdown-item v-if="!item.disabled" icon="Lock"
                                 @click="() => item.disabled = true">不可选</el-dropdown-item>

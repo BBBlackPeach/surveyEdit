@@ -1,6 +1,6 @@
-import { createRouter,createWebHashHistory, RouteRecordRaw } from "vue-router"
+import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router"
 
-const routerBase=ref("/survey")
+const routerBase = ref("/surveyEdit")
 const routes: Array<RouteRecordRaw> = [
     {
         path: '/',

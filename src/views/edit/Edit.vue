@@ -33,7 +33,7 @@ const router= useRoute();
 
 onUnmounted(() => {
   if(router.fullPath!='/survey/preview'){
-    // editStore.clearEdit();
+    editStore.clearEdit();
   }
 })
 
@@ -52,7 +52,7 @@ onUnmounted(() => {
 }
 
 .edit-main-group {
-  margin: 0 0 3vh 0;
+  margin: 0 0 2rem 0;
   background-color: #F7F8FA;
 }
 </style>

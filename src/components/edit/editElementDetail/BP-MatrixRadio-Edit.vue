@@ -27,7 +27,7 @@
                 <template #label>
                     <el-input v-model="item.value" class="un-border-input"></el-input>
                 </template>
-                <el-dropdown trigger="contextmenu">
+                <el-dropdown trigger="hover">
                     <el-input v-model="item.label" class="un-border-input"></el-input>
                     <template #dropdown>
                         <el-dropdown-menu>
