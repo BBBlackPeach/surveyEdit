@@ -1,6 +1,7 @@
 # 问卷表单生成器
 
-# Vue 3 + TypeScript + Vite + ElementPlus + Vuedraggable 
+### 技术栈
+Vue 3 + TypeScript + Vite + ElementPlus + Vuedraggable 
 
 ![image](https://github.com/user-attachments/assets/0a187566-0bec-4a36-9dc9-658cee409960)
 
